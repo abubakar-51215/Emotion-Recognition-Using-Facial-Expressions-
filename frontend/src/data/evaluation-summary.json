@@ -1,0 +1,176 @@
+{
+  "model_name": "Emotion Model v1",
+  "model_path": "emotion_model.h5",
+  "dataset": "dataset/test",
+  "accuracy": 0.5697966007244358,
+  "macro_precision": 0.5338264057570874,
+  "macro_recall": 0.5736071256321387,
+  "macro_f1": 0.5440699493171367,
+  "classes": [
+    "Angry",
+    "Disgust",
+    "Fear",
+    "Happy",
+    "Neutral",
+    "Sad",
+    "Surprise"
+  ],
+  "confusion_matrix": [
+    [
+      477,
+      31,
+      71,
+      53,
+      131,
+      129,
+      66
+    ],
+    [
+      15,
+      74,
+      2,
+      3,
+      4,
+      11,
+      2
+    ],
+    [
+      150,
+      13,
+      264,
+      35,
+      134,
+      207,
+      221
+    ],
+    [
+      76,
+      12,
+      30,
+      1349,
+      154,
+      60,
+      93
+    ],
+    [
+      77,
+      5,
+      81,
+      83,
+      715,
+      168,
+      104
+    ],
+    [
+      153,
+      18,
+      150,
+      67,
+      303,
+      510,
+      46
+    ],
+    [
+      22,
+      2,
+      46,
+      24,
+      28,
+      8,
+      701
+    ]
+  ],
+  "per_class": [
+    {
+      "emotion": "Angry",
+      "precision": 0.4917525773195876,
+      "recall": 0.4979123173277662,
+      "f1": 0.4948132780082988,
+      "support": 958
+    },
+    {
+      "emotion": "Disgust",
+      "precision": 0.4774193548387097,
+      "recall": 0.6666666666666666,
+      "f1": 0.556390977443609,
+      "support": 111
+    },
+    {
+      "emotion": "Fear",
+      "precision": 0.40993788819875776,
+      "recall": 0.2578125,
+      "f1": 0.31654676258992803,
+      "support": 1024
+    },
+    {
+      "emotion": "Happy",
+      "precision": 0.8358116480793061,
+      "recall": 0.7604284103720406,
+      "f1": 0.7963400236127509,
+      "support": 1774
+    },
+    {
+      "emotion": "Neutral",
+      "precision": 0.48672566371681414,
+      "recall": 0.5798864557988646,
+      "f1": 0.5292376017764618,
+      "support": 1233
+    },
+    {
+      "emotion": "Sad",
+      "precision": 0.46660567246111617,
+      "recall": 0.40898155573376105,
+      "f1": 0.4358974358974359,
+      "support": 1247
+    },
+    {
+      "emotion": "Surprise",
+      "precision": 0.5685320356853204,
+      "recall": 0.8435619735258725,
+      "f1": 0.6792635658914729,
+      "support": 831
+    }
+  ],
+  "top_misclassifications": [
+    {
+      "true": "Sad",
+      "predicted": "Neutral",
+      "count": 303
+    },
+    {
+      "true": "Fear",
+      "predicted": "Surprise",
+      "count": 221
+    },
+    {
+      "true": "Fear",
+      "predicted": "Sad",
+      "count": 207
+    },
+    {
+      "true": "Neutral",
+      "predicted": "Sad",
+      "count": 168
+    },
+    {
+      "true": "Happy",
+      "predicted": "Neutral",
+      "count": 154
+    },
+    {
+      "true": "Sad",
+      "predicted": "Angry",
+      "count": 153
+    },
+    {
+      "true": "Fear",
+      "predicted": "Angry",
+      "count": 150
+    },
+    {
+      "true": "Sad",
+      "predicted": "Fear",
+      "count": 150
+    }
+  ]
+}
